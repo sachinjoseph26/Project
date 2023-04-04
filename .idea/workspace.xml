@@ -4,42 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8715df10-28c9-4ad6-a057-2fcdc50291b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/img/jobpost/Photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/img/jobpost/Photo_7WAvF22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/img/jobpost/Photo_UjhGRah.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/img/jobpost/Photo_jqNcOYW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/resume/RubelThomas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/resume/RubelThomasBinu.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/resume/RubelThomas_FewSTxs.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/resume/RubelThomas_MxG9Cbr.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/resume/RubelThomas_m6R25Lu.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/resume/SachinJoseph.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/app/resume/SachinJoseph_vQo4ZG0.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/employee/migrations/0002_auto_20230403_1335.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/employee/migrations/0003_jobdetails_jobtype.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/employee/migrations/0004_applylist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/employee/migrations/0005_applylist_experience.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/apply.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/base2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/jobpost.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/jobpostlist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/e2e/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/e2e/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0002_candidate_gender.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/base1.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/base1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/job-listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/job-listings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/job-single.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="8715df10-28c9-4ad6-a057-2fcdc50291b6" name="Changes" comment="Second Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,6 +20,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d250daf5-6ce8-4630-98b1-b808730e87ce" />
+        <option name="url" value="https://github.com/sachinjoseph26/Job_portal_Django.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,6 +64,14 @@
       <option name="presentableId" value="Default" />
       <updated>1680058280933</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second Commit">
+      <created>1680587234759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680587234759</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -98,5 +84,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
 </project>
