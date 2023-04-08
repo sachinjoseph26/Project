@@ -4,7 +4,55 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8715df10-28c9-4ad6-a057-2fcdc50291b6" name="Changes" comment="Second Commit" />
+    <list default="true" id="8715df10-28c9-4ad6-a057-2fcdc50291b6" name="Changes" comment="Second Commit">
+      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/base1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/companylist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/verify.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/applyjoblist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0002_auto_20230403_1335.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0003_jobdetails_jobtype.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0004_applylist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0005_applylist_experience.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/apply.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/apply.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/blog-single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/base1.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/base1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/blank.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/buttons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/cards.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/forgot-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/tables.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/utilities-animation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/utilities-border.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/utilities-color.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/utilities-other.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/emprbase.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/faq.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/job-listings.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/job-listings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/portfolio-single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/portfolio.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/service-single.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/services.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/testimonials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,13 +67,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/e2e" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -52,7 +106,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/django&quot;
+    &quot;last_opened_file_path&quot;: &quot;D:/django&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680587234759</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second Commit">
+      <created>1680587320167</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680587320167</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

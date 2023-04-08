@@ -1,0 +1,169 @@
+{% extends "app/base.html" %}
+{% block content %}
+<!-- HOME -->
+    <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="text-white font-weight-bold">Candidate Apply Form</h1>
+            <div class="custom-breadcrumbs">
+              <a href="#">Home</a> <span class="mx-2 slash">/</span>
+              <a href="#">Candidate</a> <span class="mx-2 slash">/</span>
+              <span class="text-white"><strong>Apply</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="site-section">
+              {% if msg %}
+                <div class="alert alert-primary" role="alert">
+                  {{msg}}
+                </div>
+              {% endif %}
+      <div class="container">
+        {% if user %}
+            {% if can %}
+            {% if job %}
+        <div class="row align-items-center mb-5">
+
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <div>
+                <h2>Please Enter Your Details</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+
+          <div class="col-lg-12">
+
+            <form class="p-4 p-md-5 border rounded" method="post" action="{% url 'applyjob' pk=job.id %}" enctype="multipart/form-data">
+              {% csrf_token %}
+              <h3 class="text-black mb-5 border-bottom pb-2">Details</h3>
+
+              <div class="form-group">
+                <label for="company-website-tw d-block">Upload Resume</label> <br>
+                <label class="btn btn-primary btn-md btn-file">
+                  Browse File<input type="file" name="resume" hidden>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">First Name</label>
+                <input type="text" class="form-control" name="firstname" value="{{can.firstname}}">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Last Name</label>
+                <input type="text" class="form-control resume" name="lastname" value="{{can.lastname}}">
+              </div>
+              <div class="form-group">
+                <label class="text-muted">Email</label>
+                <input type="text" class="form-control resume" name="email" id="email" value="{{request.session.email}}">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Education</label>
+                <input type="text" class="form-control resume" name="education">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Experience</label>
+                <input type="text" class="form-control resume" name="experience">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Portfolio</label>
+                <input type="text" class="form-control resume" name="website">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Min Salary</label>
+                <input type="text" class="form-control resume" name="minsal">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Max Salary</label>
+                <input type="text" class="form-control resume" name="maxsal">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Contact</label>
+                <input type="text" class="form-control resume" name="contact" id="contact" value="{{can.contact}}">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Address</label>
+                <input type="text" class="form-control resume" name="address" id="address" value="{{can.address}}" >
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Postal Code</label>
+                <input type="text" class="form-control resume" name="postalcode" id="postalcode" value="{{can.postalcode}}">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Date of Birth</label>
+                <input type="text" class="form-control resume" name="dob" id="dob" value="{{can.dob}}">
+              </div>
+
+              <div class="form-group">
+                <label class="text-muted">Gender</label>
+                {% if can.gender %}
+                <div class="form-button">
+                    <input type="text" class="form-control resume" name="gender"  value="{{can.gender}}">
+                </div>
+                {% else %}
+                <div class="form-button">
+                  <select class="selectpicker border rounded" name="gender"   data-style="btn-black" data-width="100%" data-live-search="true" title="Select Gender">
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Others</option>
+                  </select>
+                </div>
+                {% endif %}
+              </div>
+
+              <div class="form-group">
+                <label for="job-location" class="text-muted">Job Name</label>
+                <input type="text" class="form-control" name="jobname" id="jobname" value="{{job.jobname}}" placeholder="e.g. New York">
+              </div>
+
+              <div class="form-group">
+                <label for="job-location" class="text-muted">Job Location</label>
+                <input type="text" class="form-control" name="joblocation" id="joblocation" value="{{job.joblocation}}" placeholder="e.g. New York">
+              </div>
+
+              <div class="form-group">
+                <label for="job-region" class="text-muted">Job Region</label>
+                  <div class="form-button">
+                    <input type="text" class="form-control resume" name="jobregion" id="jobregion"
+                           value="{{job.jobregion}}">
+                  </div>
+
+              </div>
+
+
+              <div class="col-lg-4 ml-auto form-group">
+              <div class="row col-6 btn btn-block btn-primary btn-md">
+                  <button type="submit" class="btn btn-block btn-primary btn-md">Save</button>
+              </div>
+              </div>
+
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+      {% endif %}
+            {% endif %}
+            {% endif %}
+    </section>
+{% endblock %}

@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'e2e.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'mssql',
-        'NAME': 'E2E',
+        'NAME': 'employee',
         'USER': 'sj',
         'PASSWORD': 'Sachin05##',
         'HOST': 'Sachin2605\D_SERVER',

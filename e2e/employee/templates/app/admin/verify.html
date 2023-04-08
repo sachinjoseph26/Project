@@ -1,0 +1,54 @@
+{% extends "app/admin/base1.html" %}
+{% block content %}
+<!-- HOME -->
+    <section class="section-hero overlay inner-page bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+
+            <div class="custom-breadcrumbs">
+              <a href="#">Home</a> <span class="mx-2 slash">/</span>
+              <a href="#">verification-Admin</a> <span class="mx-2 slash">/</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="site-section">
+      <div class="container">
+
+        <div class="row align-items-center mb-5">
+          <div class="col-lg-8 mb-4 mb-lg-0">
+            <div class="d-flex align-items-center">
+              <div>
+                <h2>Verify Company</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-12">
+            <form class="p-4 p-md-5 border rounded" method="post" action="{% url 'verify' pk=request.session.id %}" enctype="multipart/form-data">
+              {% csrf_token %}
+              <label for="inputEmail">Company Verify</label>
+                <div class="form-floating mb-3">
+                  <select class="selectpicker border rounded" name="verify"  data-style="btn-black" data-width="100%" data-live-search="true" >
+                    <option>Select Option</option>
+                    <option>True</option>
+                      <option>False</option>
+
+                  </select>
+                </div>
+              <div class="mt-4 mb-0">
+                <button type="submit" class="btn btn-primary">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+{% endblock %}

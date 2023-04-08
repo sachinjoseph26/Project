@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--<title> Registration or Sign Up form in HTML CSS </title>-->
+       <link rel="stylesheet" href="{% static '/css/signupstyle.css' %}">
+     </head>
+
+  <body>
+
+
+    <div class="wrapper">
+
+              {% if msg %}
+                  <h4 style="color:red">{{msg}}</h4>
+                </div>
+              {% endif %}
+
+      <h2>Login</h2>
+
+      <form class="login-form" method="POST" action="{% url 'adminlogin' %}" >
+        {% csrf_token %}
+
+        <div class="input-box">
+          <input type="text" placeholder="User Name*" name="username" required>
+        </div>
+
+        <div class="input-box">
+          <input type="password" placeholder="Enter password*" name="password" required>
+        </div>
+
+
+        <div class="input-box button">
+          <input type="Submit" value="Login">
+        </div>
+
+
+      </form>
+         </div>
+
+  </body>
+  </html>

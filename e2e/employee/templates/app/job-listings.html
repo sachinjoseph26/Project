@@ -1,0 +1,59 @@
+{% extends "app/base.html" %}
+{% block content %}
+{% load static %}
+    <section class="site-section" id="next">
+      <div class="container">
+
+
+
+        <ul class="job-listings mb-5">
+          {% if all_job %}
+          {% for i in all_job %}
+          <li class="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center">
+            <a href="{% url 'apply' pk=i.id %}"></a>
+
+
+            <div class="job-listing-about d-sm-flex custom-width w-100 justify-content-between mx-4">
+              <div class="job-listing-position custom-width w-50 mb-3 mb-sm-0">
+                <h2>{{i.jobname}}</h2>
+                <strong>{{i.companyname}}</strong>
+              </div>
+              <div class="job-listing-website mb-3 mb-sm-0 custom-width w-50">
+                <span class="">{{i.companywebsite}}</span>
+              </div>
+              <div class="job-listing-location mb-3 mb-sm-0 custom-width w-50">
+                <span class="icon-room">{{i.location}}</span>
+              </div>
+              <div class="job-listing-meta custom-width w-50">
+                <span class="badge badge-secondary">{{i.jobtype}}</span>
+              </div>
+               <div class="job-listing-meta custom-width w-20">
+                <span class="badge badge-primary">Apply</span>
+              </div>
+
+            </div>
+
+          </li>
+          {% endfor %}
+          {% endif %}
+
+        </ul>
+
+        <div class="row pagination-wrap">
+          <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
+
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <div class="custom-pagination ml-auto">
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+{% endblock %}
+
