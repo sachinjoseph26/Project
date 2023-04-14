@@ -33,7 +33,7 @@ Testing are done and all the test cases for user master, candidate and company m
 	```
 	python manage.py runserver
 	```
-## Commands for Database Migrations :
+## Commands for Database Migrations if any changes needed(Optional):
 
 ```
 python manage.py makemigrations <app-name>
