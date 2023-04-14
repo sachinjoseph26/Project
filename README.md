@@ -13,6 +13,22 @@ Testing are done and all the test cases for user master, candidate and company m
 
 - Before running the application make sure that you installed all the requirements given in requirement.txt <br />
 - Go to settings.py and change the database connection details to your server.<br />
+	```
+	 DATABASES = {
+    	  'default': {
+          'ENGINE': 'mssql',
+          'NAME': 'Database Name',
+          'USER': 'User Name',
+          'PASSWORD': 'Password',    
+          'HOST': 'Server Name',
+          'PORT': '',
+
+          'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+                     },
+    	            },
+	           }
+	```
 - For running the application: <br />
 	```
 	python manage.py runserver
