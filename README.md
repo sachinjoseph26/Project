@@ -9,13 +9,29 @@ Testing are done and all the test cases for user master, candidate and company m
 	Employer – Post Jobs and view them.
 	Admin   - Delete and update users.
 ## Steps to be followed:
+<<<<<<< HEAD
 
 •	Before running the application make sure that you installed all the requirements given in requirement.txt <br />
 •	Go to settings.py and change the database connection details to your server.<br />
 •	For running the application: python manage.py runserver<br />
 •	Either select as company or candidate and register with details, if you are already registered go with login.<br />
 •	Login to the application either as company or candidate with user credentials.<br />
+=======
+>>>>>>> b47236b1361f2d865b545d097b78c31afad32fb9
 
+• Before running the application make sure that you installed all the requirements given in requiremenst.txt <br />
+• Go to settings.py and change the database connection details to your server. <br />
+• For running the application: python manage.py runserver <br />
+• Either select as company or candidate and register with details, if you are already registered go with login. <br />
+• Login to the application either as company or candidate with user credentials.<br />
+
+
+## Commands for Database Migrations :
+
+...
+python manage.py makemigrations <app-name>
+python manage.py migrate
+...
 
 
 
