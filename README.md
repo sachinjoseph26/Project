@@ -8,31 +8,38 @@ Testing are done and all the test cases for user master, candidate and company m
 	Employee – View the Job posts and can apply for the jobs.
 	Employer – Post Jobs and view them.
 	Admin   - Delete and update users.
-## Steps to be followed:
-<<<<<<< HEAD
+	
+## Steps to be followed to run the application :
 
-•	Before running the application make sure that you installed all the requirements given in requirement.txt <br />
-•	Go to settings.py and change the database connection details to your server.<br />
-•	For running the application: python manage.py runserver<br />
-•	Either select as company or candidate and register with details, if you are already registered go with login.<br />
-•	Login to the application either as company or candidate with user credentials.<br />
-=======
->>>>>>> b47236b1361f2d865b545d097b78c31afad32fb9
-
-• Before running the application make sure that you installed all the requirements given in requiremenst.txt <br />
-• Go to settings.py and change the database connection details to your server. <br />
-• For running the application: python manage.py runserver <br />
-• Either select as company or candidate and register with details, if you are already registered go with login. <br />
-• Login to the application either as company or candidate with user credentials.<br />
-
-
+- Before running the application make sure that you installed all the requirements given in requirement.txt <br />
+- Go to settings.py and change the database connection details to your server.<br />
+- For running the application: <br />
+	```
+	python manage.py runserver
+	```
 ## Commands for Database Migrations :
 
-...
+```
 python manage.py makemigrations <app-name>
 python manage.py migrate
-...
+```
+## Dive into application features :
 
+- Either select as company or candidate and register with details, if you are already registered go with login. <br />
+- Login to the application either as company or candidate with user credentials.<br />
+- If loggined as candidate(employee) :
+	- Update profile if needed which includes updation of resume, profile photo,contact,address etc
+	- Candidate can check the Job listing and can apply for interested jobs.
+- If loggined as Company(Employer)
+	- View the dashboard
+	- Update profile if required which includes updation of company contact,address,company logo etc
+	- Can post jobs by using Post a Job option in the sidebar
+	- View application lists by checking the Application List option in the sidebar
+	- View the posted jobs by selecting the Job Lists option
+- If the admin want to login,go to /adminloginpage and have to use admin credentials(username : admin, password : admin)
+	- Admin can view the dashboard
+	- View the users list by selecting the Users List option in the sidebar and can manage(delete) the users if needed
+	- Admin can view the company list by selecting the Company List option in the sidebar and can manage(delete,update) campanies if needed 
 
 
 
