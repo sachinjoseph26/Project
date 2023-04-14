@@ -10,11 +10,11 @@ Testing are done and all the test cases for user master, candidate and company m
 	Admin   - Delete and update users.
 ## Steps to be followed:
 
-•	Before running the application make sure that you installed all the requirements given in requiremenst.txt
-•	Go to settings.py and change the database connection details to your server.
-•	For running the application: python manage.py runserver
-•	Either select as company or candidate and register with details, if you are already registered go with login.
-•	Login to the application either as company or candidate with user credentials.
+• Before running the application make sure that you installed all the requirements given in requiremenst.txt <br />
+• Go to settings.py and change the database connection details to your server. <br />
+• For running the application: python manage.py runserver <br />
+• Either select as company or candidate and register with details, if you are already registered go with login. <br />
+• Login to the application either as company or candidate with user credentials.<br />
 
 
 
