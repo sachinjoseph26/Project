@@ -1,0 +1,7 @@
+Package              Version
+-------------------- -----
+Pip                  22.3.1 
+Python               3.11
+Django               3.2
+django-mssql-backend 2.8.1
+mssql-django         1.2
