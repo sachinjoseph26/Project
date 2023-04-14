@@ -1,6 +1,6 @@
 # Job Portal Project Using Python Django 
 
-We have developed a fully functional web application using python as backend with SQL Server database.
+We have developed a fully functional web application using python as backend with SQL Server database and HTML and bootstrap for frontend.
 We have created several views for all functions in views.py.
 Testing are done and all the test cases for usermaster, candidate and comapny models are added tests.py file.
 
