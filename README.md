@@ -4,7 +4,7 @@ We have developed a fully functional web application using python as backend wit
 We have created several views for all functions in views.py.
 Testing are done and all the test cases for user master, candidate and company models are added tests.py file.
 
-Modules:
+Modules and basic functions:
 	Employee – View the Job posts and can apply for the jobs.
 	Employer – Post Jobs and view them.
 	Admin   - Delete and update users.
@@ -15,6 +15,8 @@ Steps to be followed:
 •	For running the application: python manage.py runserver
 •	Either select as company or candidate and register with details, if you are already registered go with login.
 •	Login to the application either as company or candidate with user credentials.
+
+
 
 
 
