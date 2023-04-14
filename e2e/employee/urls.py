@@ -41,7 +41,6 @@ urlpatterns = [
     path("deleteuser/<int:pk>", views.UserDelete, name="deleteuser"),
     path("deletecompany/<int:pk>", views.CompanyDelete, name="deletecompany"),
     path("verifycompanypage/<int:pk>", views.VerifyCompanyPage, name="verifypage"),
-    path("verifycompany/<int:pk>>", views.VerifyCompany, name="verify"),
-
+    path("verifycompany/<int:pk>", views.VerifyCompany, name="verify"),
 
 ]

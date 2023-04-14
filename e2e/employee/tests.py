@@ -1,9 +1,10 @@
-from django.test import TestCase
+
+from django.test import TestCase, Client
 from django.urls import reverse
-from .models import UserMaster,Candidate,Company
+from .models import UserMaster,Candidate,Company,JobDetails,ApplyList
 
 
-class UserMasterTestCase(TestCase):
+class UserMasterTestCase(TestCase):                       # UserMaster Model Testcase
     def setUp(self):
         self.user = UserMaster.objects.create(
             email='e2e@gmail.com',
@@ -24,7 +25,7 @@ class UserMasterTestCase(TestCase):
         return self.user.email
 
 
-class CandidateTestCase(TestCase):
+class CandidateTestCase(TestCase):                  # Candidate Model testcase
     def setUp(self):
         self.user = UserMaster.objects.create(
             email='e2e@gmail.com',
@@ -68,7 +69,7 @@ class CandidateTestCase(TestCase):
         return f'{self.candidate.firstname} {self.candidate.lastname}'
 
 
-class CompanyTestCase(TestCase):
+class CompanyTestCase(TestCase):                # Company Model testcase
     def setUp(self):
         self.user_master = UserMaster.objects.create(
             email='e2e@gmail.com',
@@ -100,6 +101,73 @@ class CompanyTestCase(TestCase):
         #self.assertEqual(self.company.logo_pic,'app/img/company/test.jpg')
 
     def test_company_str(self):
-        return f'{self.company.firstname} {self.company.company_name}'
+        return f'{self.company.firstname} {self.company.lastname}'
+
+
+class ApplyListTestCase(TestCase):              # ApplyList Model test
+    def setUp(self):
+        self.candidate = Candidate.objects.create(
+            firstname="John",
+            lastname="Doe",
+            contact="1234567890",
+            city="Test City",
+            address="Test Address",
+            postalcode="123456",
+            dob="1990-01-01",
+            gender="Male",
+            joblocation="Test Location",
+            jobregion="Test Region",
+            jobtype="Full-time",
+        )
+        self.job = JobDetails.objects.create(
+            jobname="Test Job",
+            companyname="Test Company",
+            companyaddress="Test Company Address",
+            jobdescription="This is a test job",
+            qualification="Bachelor's Degree",
+            responsibilties="Responsibility 1, Responsibility 2",
+            location="Test Location",
+            companywebsite="www.testcompany.com",
+            companyemail="test@testcompany.com",
+            companycontact="1234567890",
+            salarypackage="50k - 100k",
+            experience="1-3 years",
+            jobtype="Full-time",
+        )
+        self.application = ApplyList.objects.create(
+            candidate=self.candidate,
+            job=self.job,
+            education="Bachelor's Degree",
+            experience=2,
+            website="www.test.com",
+            min_salary="50k",
+            max_salary="75k",
+            gender="Male",
+        )
+
+    def test_application_details(self):
+        return f"{self.candidate.firstname} applied for {self.job.jobname}"
+
+class JobDetailsTestCase(TestCase):                     # JObDetails Model testcase
+    def setUp(self):
+        self.job = JobDetails.objects.create(
+            jobname="Test Job",
+            companyname="Test Company",
+            companyaddress="Test Company Address",
+            jobdescription="This is a test job",
+            qualification="Bachelor's Degree",
+            responsibilties="Responsibility 1, Responsibility 2",
+            location="Test Location",
+            companywebsite="www.testcompany.com",
+            companyemail="test@testcompany.com",
+            companycontact="1234567890",
+            salarypackage="50k - 100k",
+            experience="1-3 years",
+            jobtype="Full-time",
+            )
+
+    def test_job_details(self):
+        return f"{self.job} details {self.job.jobname}"
+
 
 

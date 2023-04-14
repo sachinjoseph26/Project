@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8715df10-28c9-4ad6-a057-2fcdc50291b6" name="Changes" comment="Second Commit">
+      <change afterPath="$PROJECT_DIR$/e2e/app/resume/Fulltime.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/app/resume/JineeshPushpakaran.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/app/resume/JineeshPushpakaran_LQKcr4t.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/app/resume/JineeshPushpakaran_ZuioTvd.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/app/resume/JineeshPushpakaran_gBXnXzH.pdf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/base1.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/companylist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/userlist.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/verify.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/applyjoblist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/e2e/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/e2e/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0002_auto_20230403_1335.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0003_jobdetails_jobtype.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0004_applylist.py" beforeDir="false" />
