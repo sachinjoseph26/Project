@@ -51,6 +51,8 @@ def RegisterUser(request):
                 newcomp = Company.objects.create(user_id = newuser,firstname=fname,lastname=lname)
                 return render(request,"app/login.html", {'email': email})
 
+# OTP VERIFICATION
+
 #def OTPPage(request):
 #   return render(request,"app/otpverify.html")
 #
@@ -73,8 +75,7 @@ def Loginpage(request):
     return render(request, "app/login.html")
 
 def LoginUser(request):
-    candidate_count = UserMaster.objects.get(role='candidate').count()
-    company_count = UserMaster.objects.get(role='company').count()
+
     if request.POST['role'] == "Candidate":
         email = request.POST['email']
         password = request.POST['password']
@@ -89,12 +90,7 @@ def LoginUser(request):
                 request.session['lastname'] = can.lastname
                 request.session['email'] = user.email
                 request.session['password'] = user.password
-                user_count = {
-                    'candidate_count': candidate_count,
-                    'company_count': company_count,
-                }
-
-                return redirect('index', {'user_count': user_count})
+                return redirect('index')
             else:
                 message = "Password not correct"
                 return render(request, "app/login.html", {'msg': message})
@@ -158,18 +154,20 @@ def CandidateLogout(request):
     del request.session['password']
     return redirect("loginpage")
 
-def Counts(request):
-    candidate_count = UserMaster.objects.filter(role='candidate').count()
-    company_count = UserMaster.objects.filter(role='company').count()
 
-    # Render the counts in the home page
-    user_count = {
-        'candidate_count': candidate_count,
-        'company_count': company_count,
-    }
 
-    return render(request, 'index.html', {'user_count': user_count})
-
+# Counts for Index page
+#def Counts(request):
+#    candidate_count = UserMaster.objects.filter(role='Candidate').count()
+#    company_count = UserMaster.objects.filter(role='Company').count()
+#
+#    # Render the counts in the home page
+#    user_count = {
+#        'candidate_count': candidate_count,
+#        'company_count': company_count,
+#    }
+#
+#    return redirect(request, 'index', {'user_count': user_count})
 
 def ApplyPage(request, pk):
     user = request.session.get('id')
