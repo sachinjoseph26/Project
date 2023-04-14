@@ -51,28 +51,30 @@ def RegisterUser(request):
                 newcomp = Company.objects.create(user_id = newuser,firstname=fname,lastname=lname)
                 return render(request,"app/login.html", {'email': email})
 
-def OTPPage(request):
-   return render(request,"app/otpverify.html")
-
-def OTPVerify(request):
-    email = request.POST['email']
-    otp = request.POST['otp']
-
-    user = UserMaster.objects.get(email=email)
-
-    if user:
-        if user.otp == otp:
-            message = "otp verified successfully"
-            return render(request, "app/login.html", {'msg': message})
-        else:
-            message = "otp is incorrect"
-            return render(request, "app/otpverify.html", {'msg': message})
-    else:
-        return render(request, "app/signup.html")
+#def OTPPage(request):
+#   return render(request,"app/otpverify.html")
+#
+#def OTPVerify(request):
+#    email = request.POST['email']
+#    otp = request.POST['otp']
+#
+#    user = UserMaster.objects.get(email=email)
+#
+#    if user:
+#        if user.otp == otp:
+#            message = "otp verified successfully"
+#            return render(request, "app/login.html", {'msg': message})
+#        else:
+#            message = "otp is incorrect"
+#            return render(request, "app/otpverify.html", {'msg': message})
+#    else:
+#        return render(request, "app/signup.html")
 def Loginpage(request):
     return render(request, "app/login.html")
 
 def LoginUser(request):
+    candidate_count = UserMaster.objects.get(role='candidate').count()
+    company_count = UserMaster.objects.get(role='company').count()
     if request.POST['role'] == "Candidate":
         email = request.POST['email']
         password = request.POST['password']
@@ -87,7 +89,12 @@ def LoginUser(request):
                 request.session['lastname'] = can.lastname
                 request.session['email'] = user.email
                 request.session['password'] = user.password
-                return redirect('index')
+                user_count = {
+                    'candidate_count': candidate_count,
+                    'company_count': company_count,
+                }
+
+                return redirect('index', {'user_count': user_count})
             else:
                 message = "Password not correct"
                 return render(request, "app/login.html", {'msg': message})
@@ -150,6 +157,18 @@ def CandidateLogout(request):
     del request.session['email']
     del request.session['password']
     return redirect("loginpage")
+
+def Counts(request):
+    candidate_count = UserMaster.objects.filter(role='candidate').count()
+    company_count = UserMaster.objects.filter(role='company').count()
+
+    # Render the counts in the home page
+    user_count = {
+        'candidate_count': candidate_count,
+        'company_count': company_count,
+    }
+
+    return render(request, 'index.html', {'user_count': user_count})
 
 
 def ApplyPage(request, pk):

@@ -10,6 +10,7 @@
       <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/admin/verify.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/applyjoblist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/e2e/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/e2e/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0002_auto_20230403_1335.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/migrations/0003_jobdetails_jobtype.py" beforeDir="false" />
@@ -19,6 +20,7 @@
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/about.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/apply.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/apply.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/base2.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/base2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/blog-single.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/blog.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/404.html" beforeDir="false" />
@@ -29,6 +31,7 @@
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/charts.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/forgot-password.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/jobpostlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/jobpostlist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/company/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/register.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/company/tables.html" beforeDir="false" />
@@ -50,6 +53,7 @@
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/services.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/templates/app/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/templates/app/testimonials.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/e2e/employee/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/e2e/employee/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e/employee/views.py" afterDir="false" />
     </list>
