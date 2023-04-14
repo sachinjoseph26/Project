@@ -17,6 +17,13 @@ Testing are done and all the test cases for user master, candidate and company m
 • Login to the application either as company or candidate with user credentials.<br />
 
 
+## Commands for Database Migrations :
+
+...
+python manage.py makemigrations <app-name>
+python manage.py migrate
+...
+
 
 
 
