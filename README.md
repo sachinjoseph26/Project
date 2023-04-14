@@ -23,6 +23,12 @@ Testing are done and all the test cases for user master, candidate and company m
 python manage.py makemigrations <app-name>
 python manage.py migrate
 ```
+
+## Command for Test the application :
+```
+python manage.py test
+
+```
 ## Dive into application features :
 
 - Either select as company or candidate and register with details, if you are already registered go with login. <br />
